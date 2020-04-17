@@ -4,6 +4,14 @@ class Table{
         arr.shift();
         this.rows = arr
     }
+    
+    get RowCount(){
+        return this.rows.length - 1;
+    }
+
+    get ColCount(){
+        return this.header.length;
+    }
 }
 
 module.exports = Table;
